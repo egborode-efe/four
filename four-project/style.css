@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+  background-color: var(--Very-Light-Gray);
+  max-width: 400px;
+  width: 90%;
+  margin: 30px auto;
+  position: relative;
+}
+.top {
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  /* padding-right: 100px;
+    padding-left: 100px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.no {
+  font-weight: lighter;
+}
+.bold {
+  padding-bottom: 15px;
+}
+.top1 p {
+  font-size: 19px;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px 80px;
+  gap: 30px;
+}
+.four {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  border-color: var(--Orange);
+  border-style: solid;
+  border-bottom: thin;
+  border-right: thin;
+  border-left: thin;
+}
+.four img {
+  width: 40px;
+  position: relative;
+  left: 80%;
+  top: 30%;
+}
+.third {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-color: var(--Blue);
+  border-style: solid;
+  border-bottom: thin;
+  border-right: thin;
+  border-left: thin;
+}
+.third img {
+  width: 40px;
+  position: relative;
+  left: 80%;
+  top: 30%;
+}
+.second {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-color: var(--Red);
+  border-style: solid;
+  border-bottom: thin;
+  border-right: thin;
+  border-left: thin;
+}
+.second img {
+  width: 40px;
+  position: relative;
+  left: 80%;
+  top: 30%;
+}
+.one img {
+  width: 40px;
+  position: relative;
+  left: 80%;
+  top: 30%;
+}
+.one {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-color: var(--Cyan);
+  border-style: solid;
+  border-bottom: thin;
+  border-right: thin;
+  border-left: thin;
+}
+.one1 p {
+  font-size: 12.5px;
+}
+.second1 p {
+  font-size: 12px;
+}
+.third1 p {
+  font-size: 12.5px;
+}
+.four1 p {
+  font-size: 12.5px;
+}
+p{
+    color: var(--Grayish-Blue);
+}
+h2 h3{
+    color: var(--Very-Dark-Blue);
+}
+@media (width> 600px) {
+    .bottom{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container{
+        max-width: 800px;
+        width: 90%;
+    }
+    .four{
+        position: relative;
+        top: 110%;
+        right: 115%;
+    }
+    .third{
+        position: relative;
+        left: 230%;
+        bottom: 60%;
+    }
+    .one{
+        position: relative;
+        top: 65%;
+    }
+    
+}
